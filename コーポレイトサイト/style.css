@@ -1,0 +1,419 @@
+@charset "UTF-8";
+
+body{
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  height:80px;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+header img{
+  width: 100px;
+}
+
+header ul{
+  display: flex;
+  align-items: center;
+}
+
+header ul a{
+  color:#000000;
+  font-size: 14px;
+}
+
+
+header li {
+  margin-right: 30px;
+  font-size: 14px;
+}
+
+header li:last-child{
+  margin-right: 0;
+}
+
+.header{
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 768px){
+  .header{
+    display: flex;
+  }
+}
+
+.all{
+  width:100%;
+}
+
+@media screen and (min-width: 768px){
+  .all{
+    max-width: 1032px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .logo{
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .logo{
+    margin-right: 60px;
+  }
+}
+
+.inquiry{
+  display: none;
+}
+
+@media screen and (min-width: 768px){
+  .inquiry{
+    display: inline-block;
+    font-size: 12px;
+    width: 200px;
+    height:80px;
+    text-align: center;
+    line-height: 80px;
+    background-color: #000000;
+    color: #ffffff;
+  }
+}
+
+.inquiry:hover{
+  background-color: #333;
+}
+
+.mainvisual{
+  margin-bottom: 120px  ;
+}
+
+.mainvisual img{
+  width:100%;
+  height:calc(100vh - 80px);
+  object-fit: cover;
+  object-position: center;
+}
+
+.container{
+  max-width: 1032px;
+  padding: 0 16px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container ul li:first-child{
+  border: none;
+}
+
+.container ul li:first-child{
+  padding-left: 0;
+}
+
+h2{
+  margin-bottom: 50px;
+}
+
+h2::after{
+  content: "";
+  display: block;
+  width:40px;
+  height:1px;
+  background-color: #000000;
+}
+
+h2 span{
+  display: block;
+}
+
+h2 span.en{
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+h2 span.ja{
+  font-size: 14px;
+  margin-bottom: 36px;
+}
+
+#news{
+  margin-bottom: 120px;
+}
+
+#news .container ul{
+  font-size: 14px;
+}
+
+@media screen and (min-width:768px){
+  #news .container ul{
+    display: flex;
+  }
+}
+
+#news .container ul li{
+  display: block;
+}
+
+
+@media screen and (max-width: 768px){
+  #news .container ul li{
+    margin-bottom: 30px;
+  }
+}
+
+
+@media screen and (min-width:768px){
+  #news .container ul li{
+    width: calc(100%/3);
+    padding: 10px 20px;
+    border-left: 1px solid #000000;
+  }
+}
+
+.inner{
+  display: block;
+  margin-bottom: 14px;
+}
+
+.inner .subtitle{
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  margin-left: 14px;
+  padding: 0 10px;
+}
+
+@media screen and (max-width:768px){
+  .sentence{
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+#about{
+  margin-bottom: 120px;
+}  
+
+@media screen and (min-width:768px){
+  #about{
+    display: flex;
+  }  
+}
+
+#about .photo{
+  margin-bottom: 30px;;
+}
+
+@media screen and (min-width:768px){
+  #about .photo{
+    width:55%;
+  }
+}
+
+#about .photo img{
+  width:100%;
+  object-fit: cover;
+  height: 400px;
+}
+
+.container2{
+  padding: 0 16px;
+}
+
+@media screen and (min-width:768px){
+  .container2{
+    padding: 20px 5% 50px 5%;
+    width: 45%;
+    padding: 150px 5% 0 5%;
+  }
+}
+
+.container2 h2{
+  font-size: 14px;
+}
+
+#business{
+  margin-bottom: 120px;
+}
+
+@media screen and (min-width:768px){
+  .businesslist{
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+  }  
+}
+
+@media screen and (min-width:768px){
+  .rightbusiness{
+    display: block;
+    margin-top: 100px;
+    width: 46%;
+  }
+}
+
+@media screen and (min-width:768px){
+  .leftbusiness{
+    display: block;
+    width: 46%;
+  }
+}
+
+.room{
+  display: block;
+  margin-bottom:50px;
+}
+
+.mini{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.mini::before{
+  content: "";
+  display: block;
+  width:5px;
+  height:1px;
+  background-color: #000000;
+
+}
+
+.mini img{
+  max-width: 100%;
+}
+
+#company .container{
+  position: relative;
+}
+
+@media screen and (max-width:768px){
+  #company .container{
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width:768px){
+  #company .container{
+    height: 750px;
+  }
+}
+
+.companylist{
+  padding-right: 10px;
+}
+
+.companylist dl{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.companylist dt{
+  display: block;
+  margin-top: 10px;
+}
+
+.companylist dd{
+  display: block;
+  margin-top: 10px;
+}
+
+.companylist dt:first-child{
+  margin-top: 0;
+}
+
+.companylist dd:first-of-type{
+  margin-top: 0;
+}
+
+.companylist dt{
+  width:20%;
+}
+
+.companylist dd{
+  width:80%;
+}
+
+@media screen and (max-width:768px){
+  .companylist dd{
+    padding-left: 40px;
+  }
+}
+
+.companylist .special{
+  margin-left:20%;
+}
+
+.companyleft{
+  margin-bottom: 30px;
+}
+
+.companyleft{
+  background-color: #fff;
+  padding: 100px 8% 100px 6%;
+}
+
+@media screen and (min-width:768px){
+  .companyleft{
+    width: 55%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+/*.companyphoto{
+  position: absolute;
+  top: 550px;
+  left: 0;  
+  margin: 0 16px;
+}*/
+
+@media screen and (min-width:768px){
+  .companyphoto{
+    width: 53%;
+    position: absolute;
+    top: 115px;
+    right: 0;
+  }
+}
+
+.companyphoto img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+footer{
+  background-color: #ffffff;
+  padding-bottom: 20px;
+}
+
+footer .containerroom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+footer .logo{
+  width: 100px;
+}
+
+footer .add{
+  margin-left: 20px;
+}
